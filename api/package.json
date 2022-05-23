@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "nodemon ./src/index.js",
     "test": "jest"
   },
   "repository": {
@@ -31,7 +31,10 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
+    "@sanity/client": "^3.3.0",
     "dotenv": "^16.0.1",
-    "fastify": "^3.29.0"
+    "fastify": "^3.29.0",
+    "short-uuid": "^4.2.0",
+    "unique-names-generator": "^4.7.1"
   }
 }
