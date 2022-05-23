@@ -1,0 +1,11 @@
+{
+  "name": "blend-workspace",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "dependencies": {
+    "@sanity/client": "^3.3.0",
+    "@sanity/image-url": "^1.0.1"
+  }
+}
