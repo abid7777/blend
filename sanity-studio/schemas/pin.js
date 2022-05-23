@@ -26,6 +26,12 @@ export default {
       of: [{ type: 'reference', to: { type: 'comment' } }]
     },
     {
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: { type: 'category' },
+    },
+    {
       name: 'savedByUsers',
       title: 'Saved By Users',
       type: 'array',
