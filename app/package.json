@@ -1,0 +1,56 @@
+{
+  "name": "blend",
+  "version": "1.0.0",
+  "description": "Social Webapp for sharing Images",
+  "main": "./src/index.jsx",
+  "scripts": {
+    "build": "export NODE_ENV=production && webpack --config webpack.prod.config.js",
+    "dev": "webpack serve --config webpack.dev.config.js",
+    "start": "webpack serve --open --config webpack.prod.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abid7777/blend.git"
+  },
+  "keywords": [
+    "webapp",
+    "social",
+    "image",
+    "share"
+  ],
+  "author": "abid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abid7777/blend/issues"
+  },
+  "homepage": "https://github.com/abid7777/blend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.9",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
