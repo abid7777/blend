@@ -2,6 +2,7 @@
 
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -35,6 +36,13 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        SANITY_API_VERSION: JSON.stringify('v2022-04-26'),
+        SANITY_DATASET: JSON.stringify('production'),
+        SANITY_PROJECT_ID: JSON.stringify('lw3e8r5q'),
+      },
+    }),
     new HTMLWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
       filename: 'index.[contenthash].html',

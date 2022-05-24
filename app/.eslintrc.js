@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'plugin:tailwindcss/recommended',
     'airbnb',
   ],
   parserOptions: {
@@ -16,6 +17,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'tailwindcss',
   ],
   rules: {
   },
