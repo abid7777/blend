@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -36,6 +38,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
+    new LodashModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
         SANITY_API_VERSION: JSON.stringify('v2022-04-26'),
